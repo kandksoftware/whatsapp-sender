@@ -15,7 +15,8 @@
     var url = new URL(url_string);
     const paramValue = url.searchParams.get("tel")
     if (paramValue) {
-      window.location.replace(`https://wa.me/${paramValue}`)
+      window.location.replace(https://api.whatsapp.com/send/?phone=${paramValue}`)
+      //window.location.replace(`https://wa.me/${paramValue}`)
       close()
     }
     else console.log('Parameter is empty!')
